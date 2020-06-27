@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CIExy</string>
+    <string name="content_description">Horse Shoe</string>
+    <string name="rgb_xyz">Convert RGB to XYZ</string>
+    <string name="xyz_rgb">Convert XYZ to RGB</string>
+    <string name="r">R</string>
+    <string name="g">G</string>
+    <string name="b">B</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+</resources>

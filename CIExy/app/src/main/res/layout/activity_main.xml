@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            tools:srcCompat="@tools:sample/avatars"
+            tools:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/convertGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/RgbtoXyz"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RgbtoXyz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioClick"
+                android:text="@string/rgb_xyz"
+                tools:text="@string/rgb_xyz" />
+
+            <RadioButton
+                android:id="@+id/XyztoRgb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioClick"
+                android:text="@string/xyz_rgb"
+                tools:text="@string/xyz_rgb" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/RX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/r" />
+
+            <TextView
+                android:id="@+id/YG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/g" />
+
+            <TextView
+                android:id="@+id/ZB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RXEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Decimal value 0 to 1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/YGEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Decimal value 0 to 1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ZBEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Decimal value 0 to 1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultRX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/resultGY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/resultBZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ButtonConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
