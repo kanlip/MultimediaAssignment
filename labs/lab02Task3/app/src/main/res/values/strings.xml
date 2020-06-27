@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task3</string>
+    <string name="gui">GUI</string>
+
+    <string name="flower">Flower</string>
+    <string name="random">Random</string>
+
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name='sl770lab06'
+include ':app'
