@@ -1,1 +1,1 @@
-# MultimediaAssignment
+# CSCI366 Multimedia
